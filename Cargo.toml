@@ -1,0 +1,24 @@
+[package]
+name = "responder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bincode = "2.0.0-rc.2"
+clap = { version = "4.1.8", features = ["derive"] }
+linked-hash-map = "0.5.6"
+yaml-rust = "0.4.5"
+
+[target.wasm32-wasi.dependencies]
+wasmedge_wasi_socket = "0.4.3"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "responder-packager"
+path = "src/packager.rs"
+
+[[bin]]
+name = "responder-server"
+path = "src/server.rs"

@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 129
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Root</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+</body>
+</html>
