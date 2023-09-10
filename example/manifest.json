@@ -1,0 +1,29 @@
+{
+  "matchers": [
+    {
+      "methods": ["GET"],
+      "paths": ["/"],
+      "headers": { "Accept": ["text/html"] },
+      "response": "responses/root.http"
+    },
+    {
+      "methods": ["HEAD"],
+      "paths": ["/"],
+      "headers": { "Accept": ["text/html"] },
+      "response": "responses/head.http"
+    },
+    {
+      "methods": ["OPTIONS"],
+      "paths": ["*", "/"],
+      "response": "responses/options.http"
+    },
+    {
+      "methods": ["CONNECT", "DELETE", "PATCH", "POST", "PUT", "TRACE"],
+      "paths": ["/"],
+      "response": "responses/405.http"
+    },
+    {
+      "response": "responses/404.http"
+    }
+  ]
+}

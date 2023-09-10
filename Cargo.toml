@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 bincode = "2.0.0-rc.2"
 clap = { version = "4.1.8", features = ["derive"] }
+json = "0.12.4"
 linked-hash-map = "0.5.6"
 yaml-rust = "0.4.5"
 
